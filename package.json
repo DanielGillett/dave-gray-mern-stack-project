@@ -1,0 +1,27 @@
+{
+  "name": "technotes",
+  "version": "1.0.0",
+  "description": "technotes MERN Project",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server",
+    "dev": "nodemon server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DanielGillett/dave-gray-mern-stack-project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DanielGillett/dave-gray-mern-stack-project/issues"
+  },
+  "homepage": "https://github.com/DanielGillett/dave-gray-mern-stack-project#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
