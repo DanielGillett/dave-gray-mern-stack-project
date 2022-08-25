@@ -21,9 +21,16 @@ app.use(logger)
 app.use(cors(corsOptions))
 app.use(express.json())
 app.use(cookieParser())
-app.use('/', express.static(path.join(__dirname, 'public')))
-app.use('/', require('./routes/root'))
 
+// Static (public) files
+app.use('/', express.static(path.join(__dirname, 'public')))
+
+// Routes
+app.use('/', require('./routes/root'))
+app.use('/users', require('./routes/userRoutes'))
+app.use('/notes', require('./routes/notesRoutes'))
+
+// Not Found
 app.all('*', (req, res) => {
     res.status(404)
     if (req.accepts('html'))
